@@ -1,0 +1,1191 @@
+<ion-header style="text-align: center">
+  <ion-navbar>
+    <ion-title>McDonald's System</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item no-lines style="text-align: center">
+      <img height="90px"  src="data:image/jpeg;base64,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" alt="">
+    </ion-item>
+
+
+
+
+
+<!-- PORK PATTY -->
+      
+        <ion-label  color="primary" stacked>PORK PATTY</ion-label>
+        <ion-row style="text-align: center">
+          <ion-col col-3>
+            CAS
+            <ion-item>
+                <ion-input [(ngModel)]="id11011_01" type="number"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-3>
+            PACK 
+            <ion-item>
+                <ion-input [(ngModel)]="id11011_02" type="number"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-3>
+            Subunit 
+            <ion-item>
+                <ion-input [(ngModel)]="id11011_03" type="number"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-3>
+              Unit 
+              <ion-item>
+                  <strong>{{(id11011_04)}}</strong>
+              </ion-item>
+              </ion-col>
+        </ion-row>
+
+
+<!-- APMC -->
+        <ion-label  color="primary" stacked>APMC</ion-label>
+        <ion-row style="text-align: center">
+          <ion-col col-3>
+            CAS
+            <ion-item>
+                <ion-input [(ngModel)]="id11079_01" type="number"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-3>
+            PACK 
+            <ion-item>
+                <ion-input [(ngModel)]="id11079_02" type="number"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-3>
+            Subunit 
+            <ion-item>
+                <ion-input [(ngModel)]="id11079_03" type="number"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-3>
+              Unit 
+              <ion-item>
+                  <strong>{{(id11079_04)}}</strong>
+              </ion-item>
+              </ion-col>
+        </ion-row>
+
+
+<!-- Fro. Chicken Strip -->
+<ion-label  color="primary" stacked>Fro. Chicken Strip</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11083_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11083_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11083_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11083_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+  
+
+<!-- Pork Sausage -->
+<ion-label  color="primary" stacked>Pork Sausage</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11089_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11089_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11089_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11089_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+      
+
+<!-- Canadian Bacon New -->
+<ion-label  color="primary" stacked>Canadian Bacon New</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11093_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11093_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11093_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11093_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- OPTIMIZED SAMURAI -->
+<ion-label  color="primary" stacked>OPTIMIZED SAMURAI</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11095_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11095_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11095_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11095_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- Frozen CHK Srip-CP -->
+<ion-label  color="primary" stacked>Frozen CHK Srip-CP</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11113_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11113_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11113_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11113_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- PINEAPPLE PIE/TUF -->
+<ion-label  color="primary" stacked>PINEAPPLE PIE/TUF</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11114_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11114_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11114_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11114_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- CORN PIE/TUF -->
+<ion-label  color="primary" stacked>CORN PIE/TUF</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11115_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11115_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11115_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11115_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+     
+     
+	 
+<!-- FROZEN SPICY SBL-CP -->
+<ion-label  color="primary" stacked>FROZEN SPICY SBL-CP</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11116_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11116_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11116_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11116_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+      
+	  
+<!-- Chicken Nuggets -->
+<ion-label  color="primary" stacked>Chicken Nuggets</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11120_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11120_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11120_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11120_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>	  
+	  
+	  
+<!-- FOF 90:10 No Sugar -->
+<ion-label  color="primary" stacked>FOF 90:10 No Sugar</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11135_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11135_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11135_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11135_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- value chicken Patty -->
+<ion-label  color="primary" stacked>value chicken Patty</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11137_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11137_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11137_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11137_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>	    
+	  
+      
+<!-- Frozen Basil sauce -->
+<ion-label  color="primary" stacked>Frozen Basil sauce</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11138_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11138_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11138_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11138_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+
+<!-- Green Sicky Rice Fr -->
+<ion-label  color="primary" stacked>Green Sicky Rice Fr</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11146_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11146_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11146_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11146_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- ChocBrownie Diced FZ -->
+<ion-label  color="primary" stacked>ChocBrownie Diced FZ</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11148_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11148_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11148_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11148_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- Frozen Fried Stick -->
+<ion-label  color="primary" stacked>Frozen Fried Stick </ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11149_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11149_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11149_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11149_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- RawKurobutatty118G -->
+<ion-label  color="primary" stacked>RawKurobutatty118G</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11172_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11172_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11172_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11172_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- Mixd Vegeables 1KG -->
+<ion-label  color="primary" stacked>Mixd Vegeables 1KG</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11175_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11175_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11175_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11175_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- CP Frozen spicy BIC -->
+<ion-label  color="primary" stacked>CP Frozen spicy BIC</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11178_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11178_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11178_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11178_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- FROZEN GARLI WING -->
+<ion-label  color="primary" stacked>FROZEN GARLI WING</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11179_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11179_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11179_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11179_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- FROZEN SPICY SBL -->
+<ion-label  color="primary" stacked>FROZEN SPICY SBL</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11180_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11180_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11180_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11180_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- GFPT FROZE SPICY BIC -->
+<ion-label  color="primary" stacked>GFPT FROZE SPICY BIC</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11181_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11181_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11181_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11181_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- GFPT FZ GARLIC WING -->
+<ion-label  color="primary" stacked>GFPT FZ GARLIC WING</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11182_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11182_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11182_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11182_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- GFPT FZ SPICY DRUM -->
+<ion-label  color="primary" stacked>GFPT FZ SPICY DRUM</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11183_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11183_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11183_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11183_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- GFPT FZ SPICY SBL -->
+<ion-label  color="primary" stacked>GFPT FZ SPICY SBL</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11184_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11184_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11184_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11184_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- CP FROZEN SPICY DRUM -->
+<ion-label  color="primary" stacked>CP FROZEN SPICY DRUM</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11185_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11185_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11185_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11185_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+<!-- GreenCurryChickPIE -->
+<ion-label  color="primary" stacked>GreenCurryChickPIE</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id11196_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id11196_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id11196_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id11196_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+
+
+<!-- US MCCAIN FRIES -->
+<ion-label  color="primary" stacked>US MCCAIN FRIES</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id12012_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id12012_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id12012_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id12012_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+
+<!-- AUS English Muffin -->
+<ion-label  color="primary" stacked>AUS English Muffin</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id12016_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id12016_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id12016_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id12016_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+
+<!-- NZ FRIES -->
+<ion-label  color="primary" stacked>NZ FRIES</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id12017_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id12017_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id12017_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id12017_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+
+<!-- Seasoned Beef PATTY -->
+<ion-label  color="primary" stacked>Seasoned Beef PATTY</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id12028_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id12028_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id12028_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id12028_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+
+<!-- ANGUS PATTY -->
+<ion-label  color="primary" stacked>ANGUS PATTY</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id12030_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id12030_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id12030_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id12030_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+
+<!-- Hash Browns -->
+<ion-label  color="primary" stacked>Hash Browns</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id12033_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id12033_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id12033_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id12033_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+
+<!-- Beef PATTY 10:1 -->
+<ion-label  color="primary" stacked>Beef PATTY 10:1</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id12038_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id12038_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id12038_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id12038_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+
+<!-- SUNDAE MIX 12Kgs CP -->
+<ion-label  color="primary" stacked>SUNDAE MIX 12Kgs CP</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id21123_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id21123_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id21123_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id21123_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+
+<!-- EGG NO.3(CS=3TRAY) -->
+<ion-label  color="primary" stacked>EGG NO.3(CS=3TRAY)</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id21125_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id21125_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id21125_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id21125_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+
+
+<!-- Apple Slices -->
+<ion-label  color="primary" stacked>Apple Slices</ion-label>
+<ion-row style="text-align: center">
+  <ion-col col-3>
+    CAS
+    <ion-item>
+        <ion-input [(ngModel)]="id21150_01" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    PACK 
+    <ion-item>
+        <ion-input [(ngModel)]="id21150_02" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+    Subunit 
+    <ion-item>
+        <ion-input [(ngModel)]="id21150_03" type="number"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col col-3>
+      Unit 
+      <ion-item>
+          <strong>{{(id21150_04)}}</strong>
+      </ion-item>
+      </ion-col>
+</ion-row>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    <!-- Submit -->
+    <div style="margin-top: 40px;">
+      <button ion-button block (click)="onClick()">Done</button>
+    </div>
+  
+
+
+  </ion-list>
+</ion-content>
