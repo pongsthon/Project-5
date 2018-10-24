@@ -12,6 +12,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SuccessPage } from '../pages/success/success';
 
+import { File } from '@ionic-native/file';
+import { FileOpener } from '@ionic-native/file-opener';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -37,7 +40,9 @@ import { SuccessPage } from '../pages/success/success';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    File,
+    FileOpener
   ]
 })
 export class AppModule {}
